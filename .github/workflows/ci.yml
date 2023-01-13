@@ -11,9 +11,9 @@ jobs:
       - name: Use NodeJS 12.x
         uses: actions/setup-node@v1
         with:
-          node-version: "12.x"
+          node-version: "19.x"
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       - name: Check formatting
         run: npm run format:check
       - name: Run Automated Test
