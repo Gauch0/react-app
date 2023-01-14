@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: install prettier
-        run: npm install --save-dev prettier
+        run: npm install --global prettier
       - name: Run prettier
         run: prettier --write "**/*.{js,jsx,ts,tsx,json,css,scss,md}"
       - name: Check formatting
